@@ -1,7 +1,7 @@
 import requests
 
-#name = input("Github user: ")
-endpoint = f'https://api.github.com/users/lightningbolt7/events'
+name = input("Github user: ")
+endpoint = f'https://api.github.com/users/{name}/events'
 
 response = requests.get(endpoint)
 data = response.json()
